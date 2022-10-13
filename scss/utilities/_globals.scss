@@ -1,0 +1,53 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+a,
+ol,
+li,
+ul,
+td,
+button,
+h1,
+span {
+  font-family: "Roboto-Regular", sans-serif;
+  color: theme-colors("t-white");
+}
+td {
+  @include responsive-font(3vw, 16px, 12px);
+}
+li {
+  font-family: "Roboto-Regular", sans-serif;
+  @include responsive-font(3vw, 15px, 15px);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Poppins-Bold", sans-serif;
+}
+
+h1 {
+  @include responsive-font(3vw, 25px, 36px);
+  font-weight: 900;
+}
+h2 {
+  @include responsive-font(3vw, 22px, 27px);
+  color: theme-colors("t-blue");
+  font-weight: 700;
+}
+h3,
+th {
+  @include responsive-font(3vw, 20px, 22px);
+  color: theme-colors("t-white");
+  font-weight: 700;
+}
+h4 {
+  @include responsive-font(3vw, 16px, 12px);
+  color: theme-colors("t-pink");
+  font-family: "Roboto-Regular", sans-serif;
+}

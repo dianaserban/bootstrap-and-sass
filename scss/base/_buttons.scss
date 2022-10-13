@@ -1,0 +1,114 @@
+//Like button
+.btn-like {
+  background-color: theme-colors("t-light-grey");
+  color: theme-colors("t-white");
+  @include responsive-font(3vw, 10px, 15px);
+  border: none;
+  padding: 5px 7px;
+  &:hover {
+    background-color: theme-colors("t-yellow");
+    color: black;
+  }
+  .bi-hand-thumbs-up-fill {
+    color: theme-colors("t-green");
+    &:hover {
+      color: black;
+    }
+  }
+}
+//Gradient Button
+.gradient-btn {
+  @include gradient(left, $list-1);
+  border-radius: 3rem;
+  font-weight: 900;
+  padding: 0.7rem 2.3rem;
+  &:hover {
+    @include gradient(right, $list-1);
+  }
+}
+//Gradient Button Big
+.container-button {
+  border: 1px solid theme-colors("t-light-grey");
+  border-radius: 3px;
+}
+.gradient-btn-big {
+  @include gradient(left, $list-1);
+  font-weight: 900;
+  border-radius: 3px;
+  @include responsive-font(3vw, 1vw, 18px);
+  white-space: normal !important;
+  word-wrap: break-word;
+  padding: 0.7rem 2.3rem;
+
+  &:hover {
+    @include gradient(right, $list-1);
+  }
+}
+
+//Pills button
+.nav-link,
+.nav-pills .nav-link.active {
+  @include responsive-font(3vw, 16px, 12px);
+  padding: 0 10px 0 0;
+  background-color: theme-colors("t-transparent");
+  border: none;
+
+  &:hover {
+    border: none;
+    color: theme-colors("t-pink");
+  }
+}
+.nav-pills .nav-link.active {
+  border: none;
+  color: theme-colors("t-pink");
+}
+
+.game-box {
+  background-color: theme-colors("t-light-grey");
+  padding: 0.4rem;
+  color: white;
+  margin-top: 0.65rem;
+  text-align: center;
+  margin-right: 0.5rem;
+
+  img {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.operating-box {
+  background-color: theme-colors("t-light-grey");
+  padding: 0.4rem;
+  color: theme-colors("t-white");
+  margin-top: 0.65rem;
+  text-align: center;
+  margin-right: 0.5rem;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+//Footer Buttons
+.btn-black {
+  @include gradient(left, $list-3);
+  margin-left: 0.85rem;
+  margin-top: 0.65rem;
+  padding: 0.5rem 2rem;
+  min-width: 10rem;
+  border-bottom: 2px solid theme-colors("t-transparent");
+  @include responsive-font(3vw, 12px, 12px);
+  font-weight: 500;
+
+  &:hover {
+    border-bottom: 2px solid theme-colors("t-yellow");
+  }
+}
+.btn-toggle {
+  border: none;
+  padding: 0;
+  font-weight: 700;
+}

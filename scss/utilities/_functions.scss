@@ -1,0 +1,6 @@
+//Define functions here
+//Function for color theme
+//Map colors
+@function theme-colors($key) {
+  @return map-get($theme-colors, $key);
+}

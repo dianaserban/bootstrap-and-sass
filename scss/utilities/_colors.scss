@@ -1,0 +1,37 @@
+//Define here variables for colors
+$t-white: #ffffff;
+$t-pink: #f37ef3;
+$t-blue: #0dc2fb;
+$t-yellow: #eed867;
+$t-green: #0ef68a;
+$t-brown: #494126;
+$t-light-grey: #3c3e4d;
+$t-medium-grey: #2e303d;
+$t-grey: #1b1e26;
+$t-black:#000000;
+$t-transparent: transparent;
+
+//Drop Shadow
+$drop-grey: drop-shadow(0 0 0.75rem rgba(67, 65, 65, 0.6));
+$drop-hover: drop-shadow(3px 5px 3px rgba(131, 131, 131, 0.6));
+$drop-black: drop-shadow(0 0 0.75rem rgb(0 0 0 / 0.4));
+
+//Gradient Lists
+$list-1:$t-blue 0%, $t-pink 100%;
+$list-2:#2e303d 0%, #3c3e4d 100%;
+$list-3:#131313 0,#2b2b2b 50%,#131313 100%;
+$list-4:#1b1e26 0,#2e303d 50%,#1b1e26 100%;
+
+$theme-colors: (
+  t-pink: $t-pink,
+  t-blue: $t-blue,
+  t-yellow: $t-yellow,
+  t-green: $t-green,
+  t-brown: $t-brown,
+  t-light-grey: $t-light-grey,
+  t-grey: $t-grey,
+  t-medium-grey:$t-medium-grey,
+  t-white: $t-white,
+  t-black:$t-black,
+  t-transparent: $t-transparent,
+);

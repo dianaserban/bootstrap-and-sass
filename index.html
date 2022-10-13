@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.min.css.map">
+  <title>Golden Nugget</title>
+</head>
+
+<body>
+  <main>
+    <!--Top Container here-->
+    <div class="container-fluid top-container">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col py-5">
+            <!--Breadcrumb here-->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb p-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Casino Reviews</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Golden Nugget</li>
+              </ol>
+            </nav>
+            <!--End Breadcrumb-->
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col-2">
+            <img src="img/Golden_Nugget_logo.png" class="img-fluid" alt="logo">
+          </div>
+          <div class="col-10">
+            <!--Star Rating-->
+            <div class="star-rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="pt-2">4.6 / 5 (18 votes)</p>
+            <button type="button" class="btn btn-like"><i class="bi bi-hand-thumbs-up-fill"></i> Verified and tested by
+              the
+              Jersey-Casinos team</button>
+          </div>
+        </div>
+        <!--Title here-->
+        <div class="row">
+          <div class="col py-3">
+            <h1>Golden Nugget</h1>
+            <button type="button" class="btn gradient-btn my-3" onclick="linkFirst();">WIN NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Middle Container Starts here-->
+    <div class="container-fluid middle-container" id="main-container">
+      <div class="container py-5">
+        <div class="row">
+          <!--Left Column here-->
+          <div class="col-lg-4">
+            <p>Golden Nugget online casino is one of the top virtual casino operators in New Jersey. With a stellar and
+              an almost impeccable suite of services, it’s hard not to place the Golden Nugget casino NJ above many of
+              its industry peers.
+            </p>
+            <!--Card here-->
+            <div class="card text-center my-5">
+              <div class="card-header text-white">
+                NO DEPOSIT BONUS
+              </div>
+              <div class="card-body py-5">
+                <h2 class="card-title">No deposit bonus</h2>
+                <p class="card-text">$10 free upon enrollment</p>
+                <button type="button" class="btn gradient-btn my-3" onclick="linkSecond();">WIN NOW</button><br>
+                <a href="#"><u>T&C Apply</u></a>
+              </div>
+            </div>
+            <!--End Card-->
+            <!--Start Table here-->
+            <table class="table table-rating">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    Overall Rating
+                  </th>
+                  <th scope="col">
+                    8.1 / 10
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <!--1- First Row-->
+                <tr>
+                  <td class="pt-4">Software<sup><i class="bi bi-info-circle-fill" data-toggle="tooltip" data-html="true"
+                        title="Display More Information Here"></i></sup></td>
+                  <td class="pt-4">
+                    <div class="star-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!--2- Second Row-->
+                <tr>
+                  <td>Support<sup><i class="bi bi-info-circle-fill"></i></sup></td>
+                  <td>
+                    <div class="star-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!--3- Third Row-->
+                <tr>
+                  <td>Banking<sup><i class="bi bi-info-circle-fill"></i></sup></td>
+                  <td>
+                    <div class="star-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!---4 - Fourth Row-->
+                <tr>
+                  <td>Games<sup><i class="bi bi-info-circle-fill"></i></sup></td>
+                  <td>
+                    <div class="star-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!--5 - Fifth Row-->
+                <tr>
+                  <td>Loyalty Program<sup><i class="bi bi-info-circle-fill"></i></sup></td>
+                  <td>
+                    <div class="star-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!--6 -Sixth Row-->
+                <tr>
+                  <td>User Rating<sup><i class="bi bi-info-circle-fill"></i></sup></td>
+                  <td>
+                    <div class="star-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--Right Column here-->
+          <div class="col-lg-8">
+            <div class="row middle-box">
+              <!--Payment Options here-->
+              <div class="col-sm-6">
+                <h4>PAYMENT OPTIONS</h4>
+                <table class="table table-hover table-payment">
+                  <tbody>
+                    <tr>
+                      <td>Minimum deposit amount</td>
+                      <td>$20</td>
+                    </tr>
+                    <tr>
+                      <td>Maximum widraw limit</td>
+                      <td>$15000</td>
+                    </tr>
+                    <tr>
+                      <td>Registration time</td>
+                      <td>&#8249; 5 min</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--Deposit Options here-->
+              <div class="col-sm-6">
+                <!--Pills here-->
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-deposit-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-deposit" type="button" role="tab" aria-controls="pills-deposit"
+                      aria-selected="true">DEPOSIT OPTIONS</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-withdraw-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-withdraw" type="button" role="tab" aria-controls="pills-withdraw"
+                      aria-selected="false">WITHDRAW OPTIONS</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-deposit" role="tabpanel"
+                    aria-labelledby="pills-deposit-tab">
+                    <div class="row">
+                      <div class="col-3"><img src="img/visa-logo.png" alt="Visa Logo"></div>
+                      <div class="col-3"><img src="img/visa-logo.png" alt="Visa Logo"></div>
+                      <div class="col-3"><img src="img/visa-logo.png" alt="Visa Logo"></div>
+                      <div class="col-3"><img src="img/visa-logo.png" alt="Visa Logo"></div>
+                    </div>
+                    <div class="row pt-3">
+                      <div class="col-3"><img src="img/visa-logo.png" alt="Visa Logo"></div>
+                      <div class="col-3"><img src="img/visa-logo.png" alt="Visa Logo"></div>
+                      <div class="col-3"><img src="img/visa-logo.png" alt="Visa Logo"></div>
+                      <div class="col-3"><img src="img/visa-logo.png" alt="Visa Logo"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-withdraw" role="tabpanel" aria-labelledby="pills-withdraw-tab">
+                    <p>You can't withdraw your money <i class="bi bi-emoji-frown"></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Second Box/Available Games-->
+            <div class="row middle-box my-5">
+              <div class="container px-4 mx-1">
+                <div class="row">
+                  <h4 class="mb-3 pl-0 m-0 w-100">AVAILABLE GAMES</h4>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                  <div class="col-1 game-box"><img src="img/slot-machine.png" alt="Slot Games"></div>
+                </div>
+              </div>
+              <!--Operating Systems-->
+              <div class="container px-4 mx-1 mt-5">
+                <div class="row">
+                  <h4 class="mb-3 pl-0 m-0 w-100">OPERATING SYSTEMS</h4>
+                  <div class="col-1 operating-box"><img src="img/android.png" alt="Slot Games"></div>
+                  <div class="col-1 operating-box"><img src="img/android.png" alt="Slot Games"></div>
+                  <div class="col-1 operating-box"><img src="img/android.png" alt="Slot Games"></div>
+                  <div class="col-1 operating-box"><img src="img/android.png" alt="Slot Games"></div>
+                  <div class="col-1 operating-box"><img src="img/android.png" alt="Slot Games"></div>
+                </div>
+              </div>
+            </div>
+            <!--ADVANTAGES LIST HERE-->
+            <div class="row middle-box my-5">
+              <div class="container px-4 mx-1">
+                <div class="row">
+                  <h4 class="mb-3 pl-0 m-0 w-100">ADVANTAGES</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item  list-group-item-action border-0">
+                      The most games of any NJ online casino
+                    </li>
+                    <li class="list-group-item  list-group-item-action border-0">
+                      Play live with dealers at the Golden Nugget
+                    </li>
+                    <li class="list-group-item  list-group-item-action border-0">
+                      Top-notch mobile apps for iOS and Android
+                    </li>
+                    <li class="list-group-item  list-group-item-action border-0">
+                      Get $10 free using bonus code PLAYBONUS
+                    </li>
+                    <li class="list-group-item  list-group-item-action border-0">
+                      Fast withdraw and deposit methods
+                    </li>
+                    <li class="list-group-item  list-group-item-action border-0">
+                      Live support
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--End of Advantages List-->
+          </div>
+          <!--Button full width here-->
+          <div class="container container-button p-4 ml-xl-3 ">
+            <div class="row">
+              <div class="col-lg-12 ">
+                <button type="button" class="btn gradient-btn-big text-center w-100" onclick="linkFirst();">Click Here
+                  to Get $10 Free at
+                  Golden
+                  Nugget Casino!</button>
+              </div>
+            </div>
+          </div>
+          <!--Bottom Part Here-->
+          <div class="container mt-5 ml-xl-3" id="footer-container">
+            <div class="row">
+              <div class="bd-example">
+                <p>
+                  <a class="btn btn-toggle" data-bs-toggle="collapse" href="#cuprins" role="button"
+                    aria-expanded="false" aria-controls="cuprins">
+                    Cuprins <i class="bi bi-chevron-down"></i>
+                  </a>
+                </p>
+                <div class="collapse show" id="cuprins">
+                  <div class="row">
+                    <button class="btn btn-black">Inregistrare</button>
+                    <button class="btn btn-black">Bonusuri</button>
+                    <button class="btn btn-black">Metode de plata</button>
+                    <button class="btn btn-black">Pro & Contra</button>
+                    <button class="btn btn-black">Cerinte Rulaj</button>
+                    <button class="btn btn-black">Selectie Jocuri</button>
+                    <button class="btn btn-black">Live Casino</button>
+                    <button class="btn btn-black">Esports & Virtuale</button>
+                    <button class="btn btn-black">Pariuri Sportive</button>
+                    <button class="btn btn-black">Jackpot</button>
+                    <button class="btn btn-black">Maxbet App</button>
+                    <button class="btn btn-black">VIP / Club fidelitate</button>
+                    <button class="btn btn-black">Agentii Maxbet</button>
+                    <button class="btn btn-black">Serviciu Clienti</button>
+                    <button class="btn btn-black">Producatori</button>
+                    <button class="btn btn-black">Intrebari Frecvente</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Of Middle Container Here-->
+  </main>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script>
+    function linkFirst() {
+      location.href = "#main-container";
+    }
+    function linkSecond() {
+      location.href = "#footer-container";
+    } 
+  </script>
+</body>
+
+</html>

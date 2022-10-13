@@ -1,0 +1,17 @@
+@import "mixins";
+
+//Declare font variations using mixins
+@include google-webfont($font-name: Poppins-Regular, $font-weights: 500);
+@include google-webfont($font-name: Poppins-Bold, $font-weights: 900);
+@include google-webfont($font-name: Roboto-Regular, $font-weights: 400);
+
+//Font sizes using mixins
+
+/*.limit-min {
+  @include responsive-font(3vw, 20px);
+}
+
+.limit-min-max {
+  @include responsive-font(3vw, 20px, 50px);
+}
+*/

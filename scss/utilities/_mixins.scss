@@ -1,0 +1,67 @@
+//Define fonts family here
+/**
+ * Includes a google webfont for use the theme.
+ * @param {string} $font-name The name of the font.  If the font name contains spaces
+ * use "+" instead of space.
+ * @param {string} [$font-weights=400] Comma-separated list of font weights to include.
+ */
+/*Example usage:
+ *  @include google-webfont(
+ *  $font-name: Exo,
+ *  $font-weights: 200 300 400
+ *   );
+ *
+ * Outputs: @import url(http://fonts.googleapis.com/css?family=Exo:200,300,400);*/
+ @use "sass:math";
+
+ @mixin google-webfont($font-name, $font-weights: 400) {
+ @import url("http://fonts.googleapis.com/css?family=#{$font-name}:#{$font-weights}");
+ }
+ 
+ //Define Fonts sizes here
+ ///
+ /// Viewport sized typography with minimum and maximum values
+ ///
+ /// @ param {Number}   $responsive  - Viewport-based size
+ /// @ param {Number}   $min         - Minimum font size (px)
+ /// @ param {Number}   $max         - Maximum font size (px)
+ ///                                  (optional)
+ /// @ param {Number}   $fallback    - Fallback for viewport-
+ ///                                  based units (optional)
+ ///
+ /// @ example scss - 5vw font size (with 50px fallback),
+ ///                 minumum of 35px and maximum of 150px
+ ///  @include responsive-font(5vw, 35px, 150px, 50px);
+ ///
+ @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+   $responsive-unitless: math.div($responsive, ($responsive - $responsive + 1));
+   $dimension: if(unit($responsive) == "vh", "height", "width");
+   $min-breakpoint: math.div($min, $responsive-unitless) * 100;
+ 
+   @media (max-#{$dimension}: #{$min-breakpoint}) {
+     font-size: $min;
+   }
+ 
+   @if $max {
+     $max-breakpoint: math.div($max, $responsive-unitless) * 100;
+ 
+     @media (min-#{$dimension}: #{$max-breakpoint}) {
+       font-size: $max;
+     }
+   }
+ 
+   @if $fallback {
+     font-size: $fallback;
+   }
+ 
+   font-size: $responsive;
+ }
+ 
+
+ //Mixin for GRADIENTS
+ @mixin gradient($direction, $list) { 
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+} 

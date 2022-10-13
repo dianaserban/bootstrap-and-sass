@@ -1,0 +1,41 @@
+.top-container {
+  background-image: url("../../img/bg.jpg");
+  width: 100%;
+
+  .breadcrumb {
+    background-color: theme-colors("t-transparent");
+
+    li,
+    a {
+      @include responsive-font(3vw, 13px, 15px);
+      color: theme-colors("t-white");
+    }
+    li:not(:first-child):before {
+      display: inline-block;
+      content: "\276F";
+      @include responsive-font(3vw, 9px, 10px);
+
+      color: theme-colors("t-white");
+    }
+  }
+  img {
+    filter: $drop-grey;
+    &:hover {
+      filter: $drop-hover;
+    }
+  }
+  .star-rating {
+    color: theme-colors("t-yellow");
+
+    .bi {
+      padding-right: 10px;
+      filter: $drop-black;
+      &:hover {
+        filter: $drop-hover;
+      }
+    }
+  }
+  p {
+    @include responsive-font(3vw, 14px, 15px);
+  }
+}

@@ -1,0 +1,74 @@
+//Middle Container styles here
+.middle-container {
+  background-color: theme-colors("t-grey");
+
+  .card {
+    border: none;
+    .card-header {
+      background-color: theme-colors("t-medium-grey");
+      border: none;
+    }
+    .card-body {
+      @include gradient(bottom, $list-2);
+    }
+  }
+  .table-rating {
+    td,
+    th,
+    tr {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid theme-colors("t-light-grey");
+    }
+
+    tr td:nth-child(2),
+    th:nth-child(2) {
+      text-align: right;
+    }
+    th {
+      border-top: none;
+    }
+    th:nth-child(2) {
+      color: theme-colors("t-pink");
+    }
+    sup {
+      padding-left: 0.2rem;
+    }
+    div.star-rating {
+      color: theme-colors("t-yellow");
+    }
+  }
+  .middle-box {
+    @include gradient(right, $list-4);
+    border: 1px solid theme-colors("t-light-grey");
+    border-radius: 3px;
+    opacity: 1;
+    padding: 2rem 1rem;
+
+    .table-payment {
+      tr,
+      td {
+        padding: 0.75rem 0;
+        border: none;
+      }
+      tr td {
+        border-bottom: 1px dashed theme-colors("t-light-grey");
+      }
+      tr > td:nth-child(2) {
+        text-align: right;
+      }
+    }
+    .list-group-item {
+      background-color: theme-colors("t-transparent");
+      color: theme-colors("t-white");
+      padding: 0.3rem 0;
+    }
+    .list-group-item .border-0 {
+      list-style-type: disc;
+    }
+    .list-group-item::before {
+      content: "●";
+      margin-right: 0.75rem;
+      color: theme-colors("t-green");
+    }
+  }
+}
